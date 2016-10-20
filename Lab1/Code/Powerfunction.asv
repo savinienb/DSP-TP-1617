@@ -1,0 +1,41 @@
+function [out] = Powerfunction(power,lateness,N)
+
+if  nargin < 1
+    power =  1;
+
+    lateness=0;
+    N =  20;
+
+else if  nargin < 2
+        lateness=0;
+        N =  20;
+
+    else if  nargin < 3
+            N =  20;
+        end
+    end
+end
+if N > 20
+    warning('Lenght must be inferior at 20');
+
+
+else if lateness>N
+
+    else
+
+        for a=1:N
+
+            if lateness==0
+                out(a)=power^(a);
+                break
+            else if a>=lateness
+                    out(a)=power^(a-lateness);
+
+                else
+                    out(a)=0;
+                end
+
+            end
+        end
+    end
+end

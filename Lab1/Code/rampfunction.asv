@@ -1,0 +1,34 @@
+function [out] = stepfunction(slope,lateness,N)
+
+if  nargin < 1
+    slope =  1;
+
+else if  nargin < 2
+        lateness=0;
+
+    else if  nargin < 3
+            N =  20;
+        end
+
+        if N > 20
+            warning('Lenght must be inferior at 20');
+
+
+        else if lateness>N
+
+            else
+slope*(a-lateness)
+                for a=1:N
+                    
+                        
+                     if a>=lateness
+                            out(a)=slope*(a-lateness);
+                            
+                        else
+                            out(a)=0;
+                        end
+
+                    end
+                end
+            end
+        end

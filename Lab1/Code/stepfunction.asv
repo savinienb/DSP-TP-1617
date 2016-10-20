@@ -1,0 +1,26 @@
+function [out] = stepfunction(lateness,N)
+
+if  nargin < 2
+    N =  20;
+end
+
+if N > 20
+    warning('Lenght must be inferior at 20');
+end
+
+else if lateness > N
+
+    else
+        for a=1:N
+            if a==0
+                out(a)=0;
+            else if a>=lateness
+                    out(a)=1;
+                else
+                    out(a)=0;
+               end
+
+            end
+        end
+    end
+end

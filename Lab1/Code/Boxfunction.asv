@@ -1,0 +1,42 @@
+function [out] = boxfunction(width,lateness,N)
+
+if  nargin < 1
+    width =  1;
+    lateness=10;
+     N =  20;
+     
+else if  nargin < 2
+        lateness=10;
+             N =  20;
+
+    else if  nargin < 3
+            N =  20;
+        end
+    end
+end
+if N > 20
+    warning('Lenght must be inferior at 20');
+
+
+else if lateness>N
+
+    else
+
+        for a=1:N
+
+
+            if lateness==0
+                out(a)=1;
+                
+            else if a>=lateness
+                    out(a)=1;
+                    
+                else
+                    out(a)=0;
+                end
+
+            end
+        end
+
+    end
+end
